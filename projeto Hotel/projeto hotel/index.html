@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Controle de Estoque</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h2>Controle de Estoque</h2>
+
+    <h3>Importar Planilha (XLS)</h3>
+    <div class="input-group">
+        <input type="file" id="arquivoXLS" accept=".xlsx, .xls">
+        <button onclick="importarArquivo()">Importar Planilha</button>
+    </div>
+
+    <h3>Buscar Produto</h3>
+    <div class="input-group">
+        <label for="buscarProduto">Nome do Produto:</label>
+        <input type="text" id="buscarProduto" oninput="buscarProduto()">
+    </div>
+
+    <div id="controleEntradaSaida">
+        <h3>Controle de Entrada e Saída</h3>
+        <div class="input-group">
+            <label for="quantidadeEntrada">Quantidade Entrada:</label>
+            <input type="number" id="quantidadeEntrada" min="1">
+            <label for="quantidadeSaida">Quantidade Saída:</label>
+            <input type="number" id="quantidadeSaida" min="1">
+            <button onclick="registrarMovimento()">Registrar Movimento</button>
+        </div>
+    </div>
+
+    <div id="historicoMensal">
+        <h4>Controle Mensal</h4>
+        <table>
+            <thead>
+                <tr>
+                    <th>Mês</th>
+                    <th>Entradas</th>
+                    <th>Saídas</th>
+                </tr>
+            </thead>
+            <tbody id="historicoTabela"></tbody>
+        </table>
+    </div>
+
+    <h3>Produtos no Estoque</h3>
+    <table id="tabelaEstoque">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Nome</th>
+                <th>Categoria</th>
+                <th>Estoque Atual</th>
+                <th>Status</th>
+                <th>Observações</th>
+                <th>Ação</th>
+            </tr>
+        </thead>
+        <tbody>
+        </tbody>
+    </table>
+</div>
+
+<script src="https://cdn.jsdelivr.net/npm/xlsx/dist/xlsx.full.min.js"></script>
+<script src="cod.js"></script>
+
+</body>
+</html>

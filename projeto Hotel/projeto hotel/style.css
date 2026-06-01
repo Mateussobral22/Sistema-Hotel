@@ -1,0 +1,153 @@
+/* Estilos Gerais */
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #eef2f7;
+    margin: 0;
+    padding: 0;
+    color: #4b5563;
+}
+
+h2, h3 {
+    color: #10b981;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+h4 {
+    margin-bottom: 10px;
+    color: #374151;
+    font-weight: 500;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 30px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.input-group {
+    margin: 20px 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    align-items: center;
+}
+
+.input-group label {
+    font-weight: 600;
+    color: #6b7280;
+    min-width: 120px;
+}
+
+.input-group input, .input-group button {
+    padding: 12px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.input-group input:focus {
+    outline: none;
+    border-color: #10b981;
+    box-shadow: 0 0 0 3px rgba(16, 185, 129, 0.2);
+}
+
+.input-group button {
+    background-color: #10b981;
+    color: white;
+    font-weight: 600;
+    cursor: pointer;
+    border: none;
+}
+
+.input-group button:hover {
+    background-color: #059669;
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(16, 185, 129, 0.2);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+th, td {
+    padding: 18px;
+    text-align: center;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+th {
+    background-color: #10b981;
+    color: white;
+    font-weight: 600;
+}
+
+tr:hover {
+    background-color: #f9fafb;
+}
+
+tr:last-child {
+    border-bottom: none;
+}
+
+.action-buttons button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    transition: background-color 0.3s ease;
+}
+
+.action-buttons .edit-btn {
+    background-color: #3b82f6;
+    color: white;
+}
+
+.action-buttons .edit-btn:hover {
+    background-color: #2563eb;
+}
+
+.action-buttons .delete-btn {
+    background-color: #ef4444;
+    color: white;
+}
+
+.action-buttons .delete-btn:hover {
+    background-color: #dc2626;
+}
+
+input[type="text"], input[type="number"], input[type="file"] {
+    flex-grow: 1;
+    max-width: 400px;
+}
+
+#controleEntradaSaida, #historicoMensal {
+    padding: 20px;
+    background-color: #f9fafb;
+    border-radius: 10px;
+    margin-top: 25px;
+    box-shadow: inset 0 2px 4px rgba(0,0,0,0.05);
+}
+
+#controleEntradaSaida .input-group, #historicoMensal table {
+    margin: 0;
+}
+
+#historicoMensal th, #historicoMensal td {
+    padding: 15px;
+}
+
+/* Adicionando Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
